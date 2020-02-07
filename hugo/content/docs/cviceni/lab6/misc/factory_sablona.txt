@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* You can use these functions and data structures to transform strings to numbers and used them in arrays
+enum place {
+  NUZKY, VRTACKA, OHYBACKA, SVARECKA, LAKOVNA, SROUBOVAK, FREZA,
+  _PLACE_COUNT
+};
+
+const char *place_str[_PLACE_COUNT] = {
+        [NUZKY] = "nuzky",
+        [VRTACKA] = "vrtacka",
+        [OHYBACKA] = "ohybacka",
+        [SVARECKA] = "svarecka",
+        [LAKOVNA] = "lakovna",
+        [SROUBOVAK] = "sroubovak",
+        [FREZA] = "freza",
+};
+
+enum product {
+  A, B, C,
+  _PRODUCT_COUNT
+};
+
+const char *product_str[_PRODUCT_COUNT] = {
+        [A] = "A",
+        [B] = "B",
+        [C] = "C",
+};
+
+int find_string_in_array(const char **array, int length, char *what) {
+   for (int i = 0; i < length; i++)
+      if (strcmp(array[i], what) == 0)
+         return i;
+   return -1;
+}
+*/
+
+/* It is not necessary to represent each working place with a dynamically allocated object.
+ * You can store only number of ready places
+ * int ready_places[_PLACE_COUNT];
+ */
+
+/* It is not necessary to represent each part as a dynamically allocated object.
+ * you can have only number of parts for each working phase
+ * #define _PHASE_COUNT 6
+ * int parts[_PRODUCT_COUNT][_PHASE_COUNT]
+ */
+
+int main(int argc, char **argv) {
+    /* init your internal structures, mutexes and conddition variables */
+
+    char *line, *cmd, *arg1, *arg2, ch;
+    while (1) {
+        int s = scanf(" %m[^\n]", &line), s2;
+        if (s == 1) {
+            if (strncmp(line, "start", 5) == 0) {
+                s2 = sscanf(line, "%m[a-zA-Z] %m[a-zA-Z] %m[a-zA-Z]%c", &cmd, &arg1, &arg2, &ch);
+                if ((s2 == 3) && (0 == strcmp(cmd, "start"))) {
+                    /* start new thread for new worker */
+                    /* copy worker name from arg1, the arg1 will be removed at the end of scanf
+                     * cycle */
+                    /* workers should have dynamic objects, you don't know total number of workers
+                     */
+                }
+                if (s2 >= 3) {
+                    free(arg2);
+                }
+            } else {
+                s2 = sscanf(line, "%m[a-zA-Z] %m[a-zA-Z]%c", &cmd, &arg1, &ch);
+                if ((s2 == 2) && (0 == strcmp(cmd, "make"))) {
+                    /* int product = find_string_in_array(product_str, _PRODUCT_COUNT, arg1);
+                     *
+                     * if (product>=0) {.....
+                     *   add the part to factory cycle
+                     *   you need to wakeup worker to start working if possible
+                     */
+                } else if ((s2 == 2) && (0 == strcmp(cmd, "end"))) {
+                    /* tell the worker to finish
+                     * the worker has to finish work first
+                     * you should not wait here for the worker to finish */
+                    /* if the worker is waiting for work
+                       you need to wakeup the worker */
+                } else if ((s2 == 2) && (0 == strcmp(cmd, "add"))) {
+                    /* add new place */
+                    /* if worker and part is ready, start working - wakeup worker */
+                } else if ((s2 == 2) && (0 == strcmp(cmd, "remove"))) {
+                    /* if you cannot remove empty place you cannot wait for finish work */
+                }
+            }
+            if (s2 > 0) {
+                free(cmd);
+            }
+            if (s2 > 1) {
+                free(arg1);
+            }
+            free(line);
+        } else if (s < 0) {
+            break;
+        }
+    }
+
+    /* check if every worker finished work and nobody can continue */
+}
