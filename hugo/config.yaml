@@ -1,4 +1,12 @@
 baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+languageCode: cs
+title: B4B35OSY
 theme: book
+
+markup:
+  tableOfContents:
+    startLevel: 1
+
+params:
+  BookRepo: https://gitlab.fel.cvut.cz/osy/www
+  BookEditPath: edit/master/hugo/content
