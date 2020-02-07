@@ -1,0 +1,67 @@
+---
+title: "Přednášky"
+weight: 1
+# bookFlatSection: false
+# bookToc: true
+# bookHidden: false
+# bookCollapseSection: false
+# bookComments: true
+---
+
+# Program přednášek
+1. Úvod do operačních systémů
+    - [Prezentace][l1]
+    - [Příklady][p1]
+2. Systémová volání
+    - [Prezentace][l2]
+    - [Příklady][p2]
+3. Procesy a vlákna
+    - [Prezentace][l3]
+    - [Příklady][p3]
+4. Synchronizace
+    - [Prezentace][l4]
+    - [Příklady][p4]
+5. Meziprocesní komunikace
+    - [Prezentace][l5]
+    - [Příklady][p5]
+6. Virtuální paměť
+    - [Prezentace][l6]
+7. Správa paměti
+    - [Prezentace][l7]
+8. Bezpečnost OS
+    - [Prezentace][l8]
+9. Vstup/výstup, ovladače
+    - [Prezentace][l9]
+10. Souborové systémy
+    - [Prezentace][l10]
+11. Grafický subsystém, HW akcelerace
+    - [Prezentace][l11]
+12. Virtualizace
+    - [Prezentace][l12]
+    - [Příklady][p12]
+13. Mobilní OS (Android)
+    - [Prezentace][l13]
+14. Open source, trendy v OS
+    - [Prezentace][l14]
+
+[p1]: pdf/01-priklady.tgz
+[p2]: pdf/02-priklady.tgz
+[p3]: pdf/03-priklady.tgz
+[p4]: pdf/04-priklady.tgz
+[p5]: pdf/05-priklady.tgz
+[p12]: pdf/kvmtest.tar.gz
+
+[l1]: pdf/lekce01.pdf
+[l2]: pdf/lekce02.pdf
+[l3]: pdf/lekce03.pdf
+[l4]: pdf/lekce04.pdf
+[l5]: pdf/lekce05.pdf
+[l6]: pdf/lekce06.pdf
+[l7]: pdf/lekce07.pdf
+[l8]: pdf/osy8.pdf
+[l9]: pdf/osy9.pdf
+[l10]: pdf/osy10.pdf
+[l11]: pdf/osy11.pdf
+[l12]: pdf/lekce12_virt.pdf
+[l13]: pdf/osy13.pdf
+[l14]: pdf/osy14.pdf
