@@ -20,11 +20,11 @@ Cvičení probíhají v učebně
 5. [Vlákna a synchronizace v C](lab5)
 6. [Pokročilá synchronizace](lab6)
 7. [Synchronizace -- dokončení](lab7)
-8. [Systémová volání – Linux](lab8)
+8. [Systémová volání -- Linux](lab8)
 9. [Stack overflow exploit](lab9)
-10. [Systémová volání – NOVA](lab10)
+10. [Systémová volání -- NOVA](lab10)
 11. [Paměťový alokátor](lab11)
-12. [Přepínání vláken – NOVA](lab12)
+12. [Přepínání vláken -- NOVA](lab12)
 13. [Linux & BusyBox](lab13)
 14. [Zápočet](lab14)
 
@@ -39,7 +39,7 @@ Zápočet získáte, pokud:
 # Pravidla
 - Od studentů se očekává domácí příprava na další cvičení.
 - Body se udělují za domácí úkoly a za aktivitu při cvičení:
-    - Za včas odevzdanou úlohu dostanete 2–12 bodů podle typu úlohy
+    - Za včas odevzdanou úlohu dostanete 2-12 bodů podle typu úlohy
     - Body za úlohy se strhávají za **pozdní odevzdání** a za další
       **nedostatky** odhalené cvičícím.
     - Na začátku každého cvičení bude možnost získat body za odpovědi na otázky
