@@ -37,7 +37,7 @@ extern "C" int my_free(void *address);
 ```
 
 Tyto dvě řádky vložte na začátek vašeho souboru `user/mem_alloc.cc`. `extern
-"C"` zajišťuje, aby funkce šla volat jak z programů v C++, tak v C. 
+"C"` zajišťuje, aby funkce šla volat jak z programů v C++, tak v C.
 
 Od alokátoru budou očekávány následující vlastnosti:
 - Bude schopen alokovat a uvolnit paměť.

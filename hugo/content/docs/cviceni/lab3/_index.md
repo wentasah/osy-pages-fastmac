@@ -17,7 +17,7 @@ Nastudujte [použití regulárních výrazů a nástroje pro zpracování textu]
 # Zadání úlohy
 Vytvořte skript v jazyce BASH, podle následujících požadavků:
 
-	...
+    ...
 
 # Materiály
 - [Základy regulárních výrazů](regex)

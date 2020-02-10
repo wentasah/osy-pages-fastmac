@@ -45,7 +45,7 @@ Pro toto cvičení budete potřebovat následující:
   - přečíst funkci `Ptab::insert_mapping` (byla na přednáškách)
   - podívat se na třídu `Kalloc`
   - při práci přes vzdálený přístup použijte
-    ```bash 
+    ```bash
     ssh -X «login»@postel.felk.cvut.cz
     ```
     přepínač `-X` umožní spouštět i grafické aplikace (QEMU)
@@ -145,8 +145,6 @@ make hw10
   potřebovat, jsou tak jednoduché, že byste měli být schopni jim porozumět na
   základě čtení kódu (a komentářů). Pokud však i přes veškerou vaší snahu
   něčemu nerozumíte, ptejte se na [fóru][forum].
-- 
-- 
 
 [9]: https://www.gnu.org/software/grub/manual/multiboot/multiboot.html
 [10]: https://www.gnu.org/software/grub/

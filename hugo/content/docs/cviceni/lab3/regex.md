@@ -301,10 +301,10 @@ Většina příkazů může mít specifikovanou adresu určující na které ř�
 příkaz aplikovat. Adresa se píše bezprostředně před příkaz. Příkazy bez adresy
 jsou aplikovány na všechny vstupní řádky. Adresa může mít podobu
 
-    číslo – číslo konkrétní řádky
-    číslo,číslo – rozsah řádek mezi zadanými čísly řádek
-    $ – poslední řádka
-    /regexp/ – řádka odpovídající regulárnímu výrazu
+    číslo -- číslo konkrétní řádky
+    číslo,číslo -- rozsah řádek mezi zadanými čísly řádek
+    $ -- poslední řádka
+    /regexp/ -- řádka odpovídající regulárnímu výrazu
 
 Vykřičník (`!`) mezi adresou a příkazem invertuje vzor, tzn. aplikuje příkaz na
 všechny řádky, které vzoru/adrese neodpovídají.

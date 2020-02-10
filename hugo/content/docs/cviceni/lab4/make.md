@@ -39,7 +39,7 @@ při stisku tabulátoru vloží sekvenci mezer!
 Make se při vykonávání pravidel chová velmi jednoduše: pokud jsou splněny
 (existují) požadované *dependencies*, vykoná se sekvence příkazů. Přitom se
 však nijak nekontroluje, že spuštěním uvedených příkazů se opravdu vytvoří
-soubor target – mezi hlavičkou pravidla a příkazy není žádná implicitní vazba
+soubor target -- mezi hlavičkou pravidla a příkazy není žádná implicitní vazba
 (ta je na autoru `Makefile` podle napsaných příkazů).
 
 Hlavní výhodou `make` je, že provádí pouze ta pravidla, která jsou nutná a

@@ -22,48 +22,66 @@ funkcemi příkazové řádky a dalšími nástroji UNIXového operačního syst
 Vytvořte skript v jazyce BASH (s příponou `.sh`), který:
 
 - bude číst řádky ze standardního vstupu
+
 - pro každou řádku začínající řetězcem “PATH ” bude postupovat následovně:
-    - Zbytek řádku za řetězcem “PATH ” bude považovat za cestu v souborovém
-      systému
-    - Cesty v souborovém systému na vstupu mohou být jak relativní, tak
-      absolutní. Výstup skriptu bude obsahovat cesty tak, jak byly na vstupu.
-    - Podle typu souboru na dané cestě skript vypíše jednu z následujících hlášek:
-	- `FILE 'cesta/k/souboru' pocet_řádků_souboru '1._řádek_souboru'` pro
-          existující běžný soubor
-	- `DIR 'cesta/k/adresari'` pokud se jedná o adresář
-	- `LINK 'cesta/k/symlinku' 'cesta/k/cilovemu/souboru'` pokud se jedná o
-          symbolický odkaz (včetně neplatných odkazů). Cestu k cílovému souboru
-          můžete zjistit příkazem `readlink` bez přepínače.
-	- `ERROR 'cesta/k/souboru'` pokud cesta neexistuje (nebo se nejedná o
-          jeden z předchozích případů)
-    - Hlášku `ERROR` vypisujte na standardní chybový výstup, ostatní na
-      standardní výstup.
+
+  - Zbytek řádku za řetězcem “PATH ” bude považovat za cestu v souborovém
+    systému
+
+  - Cesty v souborovém systému na vstupu mohou být jak relativní, tak
+    absolutní. Výstup skriptu bude obsahovat cesty tak, jak byly na vstupu.
+
+  - Podle typu souboru na dané cestě skript vypíše jednu z následujících
+    hlášek:
+
+    - `FILE 'cesta/k/souboru' pocet_řádků_souboru '1._řádek_souboru'` pro
+      existující běžný soubor
+
+    - `DIR 'cesta/k/adresari'` pokud se jedná o adresář
+
+    - `LINK 'cesta/k/symlinku' 'cesta/k/cilovemu/souboru'` pokud se jedná o
+      symbolický odkaz (včetně neplatných odkazů). Cestu k cílovému souboru
+      můžete zjistit příkazem `readlink` bez přepínače.
+
+    - `ERROR 'cesta/k/souboru'` pokud cesta neexistuje (nebo se nejedná o jeden
+      z předchozích případů)
+
+  - Hlášku `ERROR` vypisujte na standardní chybový výstup, ostatní na
+    standardní výstup.
+
 - všechny ostatní řádky ignoruje
+
 - bude mít 2 nepovinné přepínače: `-h` a `-z`
-    - přepínač `-h` způsobí vypsání stručné nápovědy ke skriptu a ukončení
-      skriptu s návratovou hodnotou `0` ještě před čtením řádek ze standardního
-      vstupu. Přepínače následující za `-h` budou ignorovány.
 
-      {{< hint warning >}}
-	  Opravdu stručnou! neopisujte tam prosím zadání úlohy!
-      {{< /hint >}}
+  - přepínač `-h` způsobí vypsání stručné nápovědy ke skriptu a ukončení
+    skriptu s návratovou hodnotou `0` ještě před čtením řádek ze standardního
+    vstupu. Přepínače následující za `-h` budou ignorovány.
 
-    - přepínač `-z` na konci zabalí všechny soubory pro které skript vypsal
-      řádku `FILE` (tedy symlinky ne) do archivu s názvem '`output.tgz`'. K
-      vytvoření archivu použijte příkaz
+    {{< hint warning >}}
+    Opravdu stručnou! neopisujte tam prosím zadání úlohy!
+    {{< /hint >}}
 
-          tar czf output.tgz file1 file2...
+  - přepínač `-z` na konci zabalí všechny soubory pro které skript vypsal řádku
+    `FILE` (tedy symlinky ne) do archivu s názvem '`output.tgz`'. K vytvoření
+    archivu použijte příkaz
+    ```bash
+    tar czf output.tgz file1 file2...
+    ```
+  - pořadí přepínačů může být libovolné
 
-    - pořadí přepínačů může být libovolné
-    - při zadání libovolného jiného přepínače skript skončí chybou (kromě
-      případu, kdy je jiný přepínač za `-h` -- viz výše)
+  - při zadání libovolného jiného přepínače skript skončí chybou (kromě
+    případu, kdy je jiný přepínač za `-h` -- viz výše)
+
 - bude mít návratovou hodnotu
-    - `0` pokud nedojde k žádné chybě a nebyla vypsána žádná řádka začínající
-      `ERROR`
-    - `1` pokud výstup obsahuje alespoň jeden řádek začínající `ERROR`
-    - `2` pokud nastane jiná chyba (špatné argumenty, chyba při vytváření
-      archivu, chyba při čtení souboru apod.). Při zjištění chyby této
-      kategorie skript ihned skončí.
+
+  - `0` pokud nedojde k žádné chybě a nebyla vypsána žádná řádka začínající
+    `ERROR`
+
+  - `1` pokud výstup obsahuje alespoň jeden řádek začínající `ERROR`
+
+  - `2` pokud nastane jiná chyba (špatné argumenty, chyba při vytváření
+    archivu, chyba při čtení souboru apod.). Při zjištění chyby této kategorie
+    skript ihned skončí.
 
 Dodržujte předepsané formátování výstupu (včetně apostrofů) kvůli automatickému
 vyhodnocování.

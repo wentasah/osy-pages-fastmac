@@ -87,7 +87,7 @@ chroot _install /bin/sh
 
 Ten spustí příkaz `/bin/sh` s kořenovým adresářem nastaveným na `_install`.
 Shell tedy neuvidí žádné jiné soubory než ty, co jsou v adresáři `_install` a
-pokud tam budou chybět potřebné knihovny, nepůjde ani spustit. 
+pokud tam budou chybět potřebné knihovny, nepůjde ani spustit.
 
 Nejjednodušší možnost jak nabootovat do právě vytvořeného uživatelského
 prostředí je uložit ho ve formátu pro Linuxový startovací RAM-disk a nabootovat

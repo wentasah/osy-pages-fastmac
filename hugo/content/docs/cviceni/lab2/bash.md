@@ -583,7 +583,7 @@ function funkce
 }
 A=2
 funkce
-echo $A	  # vypíše "2"
+echo $A      # vypíše "2"
 ```
 # Zpracování přepínačů v argumentech skriptu
 Syntaxe volání většiny nástrojů v unixových systémech se řídí doporučeními
