@@ -1,0 +1,26 @@
+image: debian:buster
+www-pages:
+        stage: deploy
+        before_script:
+                - apt-get update -y
+                - apt-get install -y wget build-essential
+                - wget https://dl.google.com/go/go1.13.8.linux-amd64.tar.gz
+                - tar -C /usr/local -xzf go1.13.8.linux-amd64.tar.gz
+                - export PATH=$PATH:/usr/local/go/bin
+                - mkdir $HOME/src
+                - cd $HOME/src
+                - apt-get install -y git
+                - git clone https://github.com/gohugoio/hugo.git
+                - cd hugo
+                - go install --tags extended
+                - export GOPATH=/root/go
+                - export PATH=$PATH:$GOPATH/bin
+        script:
+                - cd /builds/osy/www/
+                - hugo -s hugo -d public
+                - mv hugo/public public
+        artifacts:
+                paths:
+                        - public
+        only:
+                - master@osy/www
