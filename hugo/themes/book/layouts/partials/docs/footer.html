@@ -15,9 +15,17 @@
 
 {{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
   <div>
+      <p>{{ i18n "Is there some error on page?" }}</p>
     <a class="flex align-center" href="{{ .Site.Params.BookRepo }}/{{ .Site.Params.BookEditPath }}/{{ replace .File.Path "\\" "/" }}" target="_blank" rel="noopener">
       <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
       <span>{{ i18n "Edit this page" }}</span>
+    </a>
+  </div>
+  <div>
+      <p>{{ i18n "Have question or feedback?" }}</p>
+    <a class="flex align-center" href="{{ .Site.Params.BookRepo }}/issues/new?issue[title]=Zpětná+vazba+k:+{{ .Page.Title }}+({{ replace .File.Path "\\" "/" }})" target="_blank" rel="noopener">
+      <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="Edit" />
+      <span>{{ i18n "Let us know" }}</span>
     </a>
   </div>
 {{ end }}

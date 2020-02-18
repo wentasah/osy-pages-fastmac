@@ -1,5 +1,6 @@
 baseURL: http://osy.pages.fel.cvut.cz/
 languageCode: cs
+DefaultContentLanguage: cs
 title: B4B35OSY
 theme: book
 
@@ -8,5 +9,5 @@ markup:
     startLevel: 1
 
 params:
-  BookRepo: https://gitlab.fel.cvut.cz/osy/www
+  BookRepo: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz
   BookEditPath: edit/master/hugo/content
