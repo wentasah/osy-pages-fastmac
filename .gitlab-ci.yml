@@ -16,11 +16,11 @@ pages:
                 - export GOPATH=/root/go
                 - export PATH=$PATH:$GOPATH/bin
         script:
-                - cd /builds/osy/www/
+                - cd /builds/osy/osy.pages.fel.cvut.cz
                 - hugo -s hugo -d public
                 - mv hugo/public public
         artifacts:
                 paths:
                         - public
         only:
-                - master@osy/www
+                - master@osy/osy.pages.fel.cvut.cz
