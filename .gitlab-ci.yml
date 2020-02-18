@@ -1,5 +1,5 @@
 image: debian:buster
-www-pages:
+pages:
         stage: deploy
         before_script:
                 - apt-get update -y
@@ -22,5 +22,3 @@ www-pages:
         artifacts:
                 paths:
                         - public
-        only:
-                - master@osy/www
