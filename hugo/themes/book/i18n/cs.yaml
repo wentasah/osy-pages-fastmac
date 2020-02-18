@@ -1,0 +1,14 @@
+- id: Search
+  translation: Hledej
+
+- id: Edit this page
+  translation: Uprav tuto stránku
+
+- id: Last modified by
+  translation: Naposledy změnil
+
+- id: Expand
+  translation: Rozbal
+
+- id: bookSearchConfig
+  translation: '{ cache: true }'
