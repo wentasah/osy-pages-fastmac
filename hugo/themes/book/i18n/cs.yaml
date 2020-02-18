@@ -1,8 +1,17 @@
 - id: Search
   translation: Hledej
 
+- id: Is there some error on page?
+  translation: Je na stránce chyba?
+
 - id: Edit this page
   translation: Uprav tuto stránku
+
+- id: Have question or feedback?
+  translation: Máte otázky nebo připomínky?
+
+- id: Let us know
+  translation: Dejte nám vědět
 
 - id: Last modified by
   translation: Naposledy změnil
