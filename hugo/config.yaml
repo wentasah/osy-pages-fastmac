@@ -1,5 +1,6 @@
 baseURL: http://osy.pages.fel.cvut.cz/
 languageCode: cs
+DefaultContentLanguage: cs
 title: B4B35OSY
 theme: book
 
