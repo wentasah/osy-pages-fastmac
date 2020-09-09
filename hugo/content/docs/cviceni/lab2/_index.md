@@ -127,4 +127,5 @@ echo PATH soubor.txt | ./script.sh
 # Domácí příprava na další cvičení
 Nastudujte [nástroje pro zpracování textu a použití regulárních výrazů][regex].
 
+
 [regex]: ../lab3/regex
