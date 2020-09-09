@@ -62,11 +62,6 @@ Zápočet získáte, pokud:
 [hw-upload]: https://cw.felk.cvut.cz/brute/student/course/B4B35OSY
 [plagiat]: https://cw.fel.cvut.cz/wiki/help/common/plagiaty_opisovani
 
-# Komunikace
-Se cvičícími a přednášejícími komunikujte osobně na cvičeních a přednáškách,
-případně přes fórum, kam směřujte zejména otázky, které mohou zajímat i
-ostatní.
-
 # Vzdálený přístup k uživatelským kontům
 Ke svému domovskému adresáři používanému při cvičeních se můžete dostat
 odkudkoli z internetu protokolem SSH či SFTP přes server postel.felk.cvut.cz:
