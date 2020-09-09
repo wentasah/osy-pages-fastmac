@@ -43,6 +43,11 @@ date: 2020-02-07T10:47:21+01:00
 [jv]: mailto:jiri.vlasak.2@cvut.cz
 {{< /columns >}}
 
+# Komunikace
+TODO: Se cvičícími a přednášejícími komunikujte osobně na cvičeních a přednáškách,
+případně přes fórum, kam směřujte zejména otázky, které mohou zajímat i
+ostatní.
+
 [Diskuzní fórum](https://cw.felk.cvut.cz/forum/forum-1585.html) -- kde to dává
 smysl, preferujeme veřejnou komunikaci přes diskuzní fórum před privátní
 komunikací emailem.
