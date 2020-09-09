@@ -48,7 +48,7 @@ smysl, preferujeme veřejnou komunikaci přes diskuzní fórum před privátní
 komunikací emailem.
 
 # Hodnocení předmětu
-- Cvičení: max. 65 bodů
+- Cvičení: max. 65 bodů (pokud student získá za dobrovolné úkoly více bodů, budou zastropovány na 65)
 - Zkouška:
     - Písemná část -- max. 30 bodů
     - Ústní část -- max. 10 bodů
