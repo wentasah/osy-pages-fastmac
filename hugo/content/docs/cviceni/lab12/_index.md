@@ -1,6 +1,6 @@
 ---
-title: "C. NOVA Multithreading"
-weight: 1
+title: "12. NOVA Multithreading"
+weight: 2
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

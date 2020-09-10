@@ -1,6 +1,6 @@
 ---
-title: "B. NOVA Malloc"
-weight: 1
+title: "11. NOVA Malloc"
+weight: 2
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
