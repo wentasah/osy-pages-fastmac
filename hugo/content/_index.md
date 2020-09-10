@@ -44,13 +44,17 @@ date: 2020-02-07T10:47:21+01:00
 {{< /columns >}}
 
 # Komunikace
-TODO: Se cvičícími a přednášejícími komunikujte osobně na cvičeních a přednáškách,
-případně přes fórum, kam směřujte zejména otázky, které mohou zajímat i
-ostatní.
+Se cvičícími a přednášejícími komunikujte osobně na cvičeních a
+přednáškách. Otázky a připomínky, zejména ty, které mohou zajímat i
+ostatní, směřujte na [GitLab Issues][]. Případně můžete použít i
+[diskuzní fórum][], které ale chceme používat primárně pro komunikaci
+od vyučujících směrem ke studentům.
 
-[Diskuzní fórum](https://cw.felk.cvut.cz/forum/forum-1585.html) -- kde to dává
-smysl, preferujeme veřejnou komunikaci přes diskuzní fórum před privátní
-komunikací emailem.
+Kde to dává smysl, preferujeme veřejnou komunikaci přes gitlab či
+fórum před privátní komunikací emailem.
+
+[GitLab Issues]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues?scope=all&utf8=%E2%9C%93&state=all
+[diskuzní fórum]: https://cw.felk.cvut.cz/forum/forum-1663.html
 
 # Hodnocení předmětu
 - Cvičení: max. 65 bodů (pokud student získá za dobrovolné úkoly více bodů, budou zastropovány na 65)
