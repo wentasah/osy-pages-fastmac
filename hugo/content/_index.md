@@ -4,7 +4,7 @@ type: docs
 date: 2020-02-07T10:47:21+01:00
 ---
 
-# B4B35OSY - Operační systémy
+# B4B35OSY – Operační systémy
 
 # Výuka
 {{< columns >}}
