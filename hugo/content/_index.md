@@ -1,5 +1,5 @@
 ---
-title: "B4B35OSY - Operační systémy"
+title: "Operační systémy"
 type: docs
 date: 2020-02-07T10:47:21+01:00
 ---
