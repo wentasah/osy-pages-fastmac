@@ -58,7 +58,7 @@ Vytvořte skript v jazyce BASH (s příponou `.sh`), který:
     vstupu. Přepínače následující za `-h` budou ignorovány.
 
     {{< hint warning >}}
-    Opravdu stručnou! neopisujte tam prosím zadání úlohy!
+   Opravdu stručnou! neopisujte tam prosím zadání úlohy!
     {{< /hint >}}
 
   - přepínač `-z` na konci zabalí všechny soubory pro které skript vypsal řádku
