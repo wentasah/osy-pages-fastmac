@@ -3,6 +3,15 @@ This repository contains web pages of [OSY course][1].
 
 [1]: http://osy.pages.fel.cvut.cz/
 
+# Develop
+
+You may run the pages locally with docker. From `hugo` directory, run:
+
+```
+docker run --rm -e HUGO_WATCH=1 -e HUGO_THEME=book -p 1313:1313 \
+    --name "hugo" -P -v $(pwd):/src jojomi/hugo
+```
+
 # Contribute
 Use [OneFlow][] branching model. Write [great git commit messages][]:
 
