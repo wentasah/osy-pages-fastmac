@@ -27,6 +27,10 @@ vytvořit funkční unixové uživatelské prostředí o celkové velikosti pod 
 [BusyBox]: http://busybox.net/
 
 # Zadání úlohy
+{{< hint info >}}
+Tato úloha není povinná.
+{{< /hint >}}
+
 Vytvořte shellový skript, který automaticky vytvoří a v emulátoru Qemu
 nabootuje funkční operační systém. Skript by měl vykonat následující operace:
 
