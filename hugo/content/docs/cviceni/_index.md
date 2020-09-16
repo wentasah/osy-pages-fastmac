@@ -26,7 +26,7 @@ Cvičení probíhají v učebně
 11. [Paměťový alokátor](lab11)
 12. [Přepínání vláken -- NOVA](lab12)
 13. [Linux & BusyBox](lab13)
-14. [Zápočet](lab14)
+14. Zápočet
 
 Celkem 50 (+14) bodů za cvičení.
 
