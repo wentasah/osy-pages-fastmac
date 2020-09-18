@@ -9,17 +9,19 @@ weight: 2
 ---
 
 # NOVA -- Systémová volání a správa paměti
-Na tomto cvičení se seznámíte s jádrem miniaturního OS NOVA a implementujete do
-něj systémové volání `brk`. [NOVA][] je mikrohypervizor původně vyvíjený na
-[Drážďanské univerzitě][1], později ve firmě Intel a nyní firmami [GENODE
-labs][2] a [Cyberus Technology][3]. Na cvičeních však nebudete pracovat s
-kompletní verzí jádra NOVA, ale se zjednodušenou verzí pro výuku, která má
-pouze 2 tisíce řádek kódu.
+Na tomto cvičení se seznámíte s jádrem miniaturního OS NOVA a
+implementujete do něj systémové volání `brk`. [NOVA][] je
+mikrohypervizor původně vyvíjený na [Drážďanské univerzitě][1],
+později ve firmě Intel a nyní firmami [GENODE labs][2], [BedRock
+Systems][4] a [Cyberus Technology][3]. Na cvičeních však nebudete
+pracovat s kompletní verzí jádra NOVA, ale se zjednodušenou verzí pro
+výuku, která má pouze 2 tisíce řádek kódu.
 
 [NOVA]: http://hypervisor.org/
 [1]: http://os.inf.tu-dresden.de/
 [2]: https://genode.org/
 [3]: https://gitlab.com/cyberus/NOVA
+[4]: https://bedrocksystems.com/
 
 ## Domácí příprava
 Pro toto cvičení budete potřebovat následující:
@@ -28,7 +30,7 @@ Pro toto cvičení budete potřebovat následující:
   assembleru][ia] (viz [8. cvičení][lab8])
 - vědět, co to jsou [systémová volání][5] a proč/k čemu se používají (viz
   přednášky)
-- popis instrukce [sysenter][6]
+- popis instrukce [sysenter][6] a [sysexit][]
 - vědět, co dělá systémové volání [brk][] v Linuxu
 - rozumět rozdílu mezi [uživatelským prostorem a prostorem jádra][7] (viz
   přednášky)
@@ -57,6 +59,7 @@ Pro toto cvičení budete potřebovat následující:
 [lab8]: /docs/cviceni/lab8
 [5]: https://en.wikipedia.org/wiki/System_call
 [6]: https://c9x.me/x86/html/file_module_x86_id_313.html
+[sysexit]: https://c9x.me/x86/html/file_module_x86_id_314.html
 [brk]: http://man7.org/linux/man-pages/man2/brk.2.html
 [7]: https://blog.codinghorror.com/understanding-user-and-kernel-mode/
 [8]: misc/nova.zip
@@ -75,10 +78,11 @@ datového segmentu.
 
 Vaše řešení by mělo splňovat následující požadavky:
 
-- Po úspěšném návratu ze systémového volání je break nastaven na hodnotu
-  `address`. To znamená, že uživatelský program může používat paměť od adresy
-  `0x1000` do o jedna menší než `address`. Přístup na stránky začínající na
-  adrese vyšší či rovné `address` nebude programu dovolen.
+- Po úspěšném návratu ze systémového volání je break nastaven na
+  hodnotu `address`. To znamená, že uživatelský program může používat
+  paměť od adresy `0x1000` do adresy o jedna menší než `address`.
+- Přístup na stránky začínající na adrese vyšší či rovné `address`
+  nebude programu dovolen.
 - Break nesmí jít nastavit na nižší hodnotu, než je jeho hodnota při spuštění
   programu. Tím by se program připravil o část svého kódu, dat nebo zásobníku.
 - Break nesmí jít nastavit na vyšší hodnotu než `0xC0000000`. Tím by aplikace
@@ -87,7 +91,7 @@ Vaše řešení by mělo splňovat následující požadavky:
   systémového volání. Při chybě je vrácena hodnota `0`.
 - Pokud je `address` rovno `NULL` (`0`), nejedná se o chybu a hodnota break se
   nemění. Toto volání slouží pouze ke zjištění aktuální hodnoty break.
-- Při žádném volání `brk` nesmí dojít k “pádu” systému.
+- Při žádném volání `brk` nesmí dojít k „pádu“ systému.
 - *ABI* systémového volání bude následující:
   - vstup: `AL=3`, `ESI=address`,
   - výstup: `EAX=návratová hodnota`.
@@ -99,7 +103,7 @@ Vaše řešení by mělo splňovat následující požadavky:
 - Při kompilaci nevypisuje kompilátor žádná varování.
 
 Odevzdává se archiv se souborem `ec_syscall.cc` obsahující vaši implementaci,
-ideálně vytvořený pomocí
+ideálně vytvořený pomocí:
 ```bash
 make hw10
 ```
@@ -109,12 +113,12 @@ make hw10
   buď na fyzickém počítači pomocí zavaděče podporujícího specifikaci
   [multiboot][9] (např. [GRUB 2][10]), ale pravděpodobně bude efektivnější ho
   pouštět jako virtuální stroj například v emulátoru Qemu. Pro to stačí spustit
-  příkaz
+  příkaz:
   ```bash
   make run
   ```
 
-- Při zvětšování hodnoty program `break` musíte v jádře alokovat paměť a
+- Při zvětšování hodnoty „program break“ musíte v jádře alokovat paměť a
   namapovat ji do adresního prostoru uživatelské aplikace modifikováním
   stránkovacích tabulek. Inspirací vám může být funkce `Ec::root_invoke()`,
   která připravuje paměť pro spouštěný program. Funkce čte hlavičky z binárky
@@ -124,27 +128,24 @@ make hw10
   Na konci funkce nastaví proměnné `Ec::break_min` a `Ec::break_current`, které
   pravděpodobně budete potřebovat ve své implementaci.
 
-- Při snižování hodnoty program break naopak musíte mapování zrušit a paměť
+- Při snižování hodnoty „program break“ naopak musíte mapování zrušit a paměť
   dealokovat.
 
-- Při startu uživatelského programu (např. hello) je jeho paměťová mapa
+- Při startu uživatelského programu (např. `hello`) je jeho paměťová mapa
   následující (trochu zjednodušeno):
-  - `0x00001000 - 0x00001fff` -- zásobník (4 kB), počáteční hodnota registru
-    `ESP` je `0x2000`.
-  - `0x00002000 - 0xXXXXX000-1` -- data programu, viz `.data` ve výstupu příkazu
-    ```bash
-    readelf --sections hello
-    ```
-  - `0xXXXXX000 - 0xYYYYY000-1` -- kód programu, viz `.text` ve výstupu příkazu
-    ```bash
-    readelf --sections hello
-    ```
-  - `0xYYYYY000` -- program break
+
+  | Adresy                      | Obsah                                                                    |
+  |:----------------------------|:-------------------------------------------------------------------------|
+  | `0x00001000 – 0x00001fff`   | zásobník (4 kB); počáteční hodnota registru   `ESP` je `0x2000`          |
+  | `0x00002000 – 0xXXXXX000-1` | data programu, viz `.data` ve výstupu příkazu `readelf --sections hello` |
+  | `0xXXXXX000 – 0xYYYYY000-1` | kód programu, viz `.text` ve výstupu příkazu `readelf --sections hello`  |
+  | `0xYYYYY000`                | program break                                                            |
 
 - Ke kódu jádra NOVA není žádná dokumentace, ale části, které budete
-  potřebovat, jsou tak jednoduché, že byste měli být schopni jim porozumět na
-  základě čtení kódu (a komentářů). Pokud však i přes veškerou vaší snahu
-  něčemu nerozumíte, ptejte se na [fóru][forum].
+  potřebovat, jsou tak jednoduché, že byste měli být schopni jim
+  porozumět na základě čtení kódu (a komentářů). Pokud však i přes
+  veškerou vaší snahu něčemu nerozumíte, [ptejte
+  se](https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/issues/new?issue[title]=Otázka+ke+zdrojovým+kódům+OS+NOVA).
 
 [9]: https://www.gnu.org/software/grub/manual/multiboot/multiboot.html
 [10]: https://www.gnu.org/software/grub/
@@ -159,14 +160,29 @@ na potřebná místa v kódu. Pokud vám to nestačí můžete použít parametr
 Abychom vám ladění usnadnili, v hlavním `Makefile` jsou připravena pravidla jak
 pro spouštění Qemu se zmiňovanými parametry, tak pro spouštění debuggeru `gdb`
 tak, aby šel ladit kód běžící v Qemu:
-- V jednom okně spusťte příkaz `make rd`, který spustí Qemu, které po startu
-  počká na připojení debuggeru.
-- V druhém okně pak spusťte `make du` či `make dk` podle toho, jestli chcete
-  ladit uživatelský program (hello) nebo jádro. Můžete v `Makefile` změnit
-  argument příkazu `break` tak, aby se vykonávání programu zastavilo na funkci
-  (či řádku), který potřebujete odladit.
+- V jednom okně spusťte příkaz
 
-Užitečné příkazy `gdb` (většinou se dají zkrátit na první znak):
+      make rd
+
+  který spustí Qemu, které po startu počká na připojení debuggeru.
+- V druhém okně pak spusťte
+
+      make du
+
+  (pokud chcete ladit uživatelský program (nápř. `hello‘)) nebo
+
+      make dk
+
+  pokud chcete ladit jádro.
+
+  Můžete v `Makefile` změnit argument příkazu `break` tak, aby se
+  vykonávání programu zastavilo na funkci (či řádku), který
+  potřebujete odladit.
+
+## Užitečné příkazy `gdb`
+
+Příkazy se většinou dají zkrátit na první znak.
+
 - Běh programu: `next` (`n`), `step` (`s`), `continue` (`c`)
 - Výpis proměnných: `print` (např. `p initialized_var` nebo hexadecimálně: `p/x
   initialized_var`)
@@ -176,12 +192,14 @@ Užitečné příkazy `gdb` (většinou se dají zkrátit na první znak):
 - Informace: `info registers` vypíše hodnoty registrů, `info locals` vypíše
   hodnoty lokálních proměnných atd.
 - Zobrazení: `layout src` zobrazí zdrojový kód i příkazové okno, `Ctrl-L`
-  překreslí obrazovku, tui disable vypne zobrazování zdrojového kódu.
+  překreslí obrazovku, `tui disable` vypne zobrazování zdrojového kódu.
+
+## Monitorovací konzole Qemu
 
 Pro ladění můžete používat i monitorovací konzoli Qemu, která umožňuje zobrazit
 stav emulovaného CPU.
 - Do konzole se přepnete stiskem `Ctrl-Alt-2` v grafickém okně (nebo stiskem
-  `Ctrl-a c` pokud používáte přepínač `-nographic`)
+  `Ctrl-a c` pokud spouštíte `qemu` s přepínačem `-nographic`)
 - Příkazy `info mem` nebo `info tlb` vypíší informace o mapování virtuálních
   adres na fyzické (tj. stránkovací tabulku).
 - `info registers` vypíše hodnoty registrů
@@ -191,9 +209,10 @@ stav emulovaného CPU.
   `0x5000`.
 - Při volání funkce `break(0x9000)` dojde k alokování stránek `0x5000-0x5FFF`,
   `0x6000-0x6FFF`, `0x7000-0x7FFF` a `0x8000-0x8FFF`.
-- Při dalším volání `break(0x7555)` dojde k uvolnění stránky `0x8000-0x8FFF`.
-- Při dalším volání `break(0x7666)` se neprovádí žádná alokace, ale měla by se
-  vynulovat paměť `0x7555-0x7665`.
+- Při dalším volání `break(0x7555)` dojde k uvolnění a odmapování
+  stránky `0x8000-0x8FFF`.
+- Při dalším volání `break(0x7666)` se neprovádí žádná alokace, ale
+  vynuluje se paměť `0x7555-0x7665`.
 - Při dalším volání `break(0xA000)` se alokuje nová stránka pro `0x8000-0x8FFF`
   a `0x9000-0x9FFF`, a vynuluje se paměť `0x7666-0x7FFF` (předpokládáme, že
   nově alokované stránky jsou už vynulované).
