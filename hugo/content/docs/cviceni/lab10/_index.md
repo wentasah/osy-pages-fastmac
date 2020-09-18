@@ -144,8 +144,7 @@ make hw10
 - Ke kódu jádra NOVA není žádná dokumentace, ale části, které budete
   potřebovat, jsou tak jednoduché, že byste měli být schopni jim
   porozumět na základě čtení kódu (a komentářů). Pokud však i přes
-  veškerou vaší snahu něčemu nerozumíte, [ptejte
-  se](https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/issues/new?issue[title]=Otázka+ke+zdrojovým+kódům+OS+NOVA).
+  vaší snahu něčemu nerozumíte, klidně se [zeptejte](https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/issues/new?issue[title]=Otázka+ke+zdrojovým+kódům+OS+NOVA).
 
 [9]: https://www.gnu.org/software/grub/manual/multiboot/multiboot.html
 [10]: https://www.gnu.org/software/grub/
@@ -161,18 +160,18 @@ Abychom vám ladění usnadnili, v hlavním `Makefile` jsou připravena pravidla
 pro spouštění Qemu se zmiňovanými parametry, tak pro spouštění debuggeru `gdb`
 tak, aby šel ladit kód běžící v Qemu:
 - V jednom okně spusťte příkaz
-
-      make rd
-
+  ```sh
+  make rd
+  ```
   který spustí Qemu, které po startu počká na připojení debuggeru.
 - V druhém okně pak spusťte
-
-      make du
-
+  ```sh
+  make du
+  ```
   (pokud chcete ladit uživatelský program (nápř. `hello‘)) nebo
-
-      make dk
-
+  ```sh
+  make dk
+  ```
   pokud chcete ladit jádro.
 
   Můžete v `Makefile` změnit argument příkazu `break` tak, aby se
