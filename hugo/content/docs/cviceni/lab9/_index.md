@@ -17,9 +17,9 @@ se vám může hodit vědět následující:
 - [Základní příkazy debuggeru gdb][3]: `run`, `break`, `print`, `next`, `step`,
   `nexti`, `stepi`, `layout asm`, `layout regs`. Kromě `gdb` můžete použít i
   jiné debuggery, či grafické nadstavby.
-- Pokud budete potřebovat přeložit assembler, můžete použít příkaz as `--32`,
-  či `gcc -m32 source.s` (`gcc` automaticky kompiluje přípony `.s` a `.S` pouze
-  assemblerem).
+- Pokud budete potřebovat přeložit assembler do strojového kódu,
+  můžete použít příkaz `as --32`, či `gcc -m32 source.s` (`gcc`
+  automaticky kompiluje přípony `.s` a `.S` pouze assemblerem).
 - Příkazem `objcopy` můžete vykopírovat “holé” strojové instrukce z programu.
   Např. příkaz
   ```bash
