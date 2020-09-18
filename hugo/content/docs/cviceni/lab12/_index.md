@@ -31,6 +31,10 @@ Pro toto cvičení budete potřebovat znalosti o:
 [sysenter]: https://c9x.me/x86/html/file_module_x86_id_313.html
 
 # Zadání úlohy
+{{< hint info >}}
+Tato úloha není povinná.
+{{< /hint >}}
+
 Implementujte systémová volání s následujícími prototypy:
 ```C
 int thread_create(void *(*start_routine)(void *), void *stack_top);

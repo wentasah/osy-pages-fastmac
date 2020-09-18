@@ -13,22 +13,27 @@ Cvičení probíhají v učebně
 [KN:E-2, nebo T2:H1-131](https://www.fel.cvut.cz/cz/education/rozvrhy-ng.B191/public/html/predmety/46/83/p4683606.html).
 
 # Program cvičení
-1. [OS unix -- úvod](lab1)
-2. [Skriptovací jazyk Bash](lab2)
-3. [Zpracování textu v Bashi](lab3)
-4. [Makefile a meziprocesní komunikace v C](lab4)
-5. [Vlákna a synchronizace v C](lab5)
-6. [Pokročilá synchronizace](lab6)
-7. [Synchronizace -- dokončení](lab7)
-8. [Systémová volání -- Linux](lab8)
-9. [Stack overflow exploit](lab9)
-10. [Systémová volání -- NOVA](lab10)
-11. [Paměťový alokátor](lab11)
-12. [Přepínání vláken -- NOVA](lab12)
-13. [Linux & BusyBox](lab13)
-14. [Zápočet](lab14)
+| cv.   | body  | náplň
+| :---: | :---: | :---
+| 1.    | --    | [OS unix -- úvod](lab1)
+| 2.    | 2     | [Skriptovací jazyk Bash](lab2)
+| 3.    | 4     | [Zpracování textu v Bashi](lab3)
+| 4.    | 5     | [Makefile a meziprocesní komunikace v C](lab4)
+| 5.    | 6     | [Vlákna a synchronizace v C](lab5)
+| 6.    | 12    | [Pokročilá synchronizace](lab6)
+| 7.    | --    | [Synchronizace -- dokončení](lab7)
+| 8.    | 5     | [Systémová volání -- Linux](lab8)
+| 9.    | (5)   | [Stack overflow exploit](lab9)
+| 10.   | 9     | [Systémová volání -- NOVA](lab10)
+| 11.   | 7     | [Paměťový alokátor](lab11)
+| 12.   | (5)   | [Přepínání vláken -- NOVA](lab12)
+| 13.   | (4)   | [Linux & BusyBox](lab13)
+| 14.   | --    | Zápočet
+| Součet | 50 (+14) |
 
-Celkem 50 (+14) bodů za cvičení.
+{{< hint info >}}
+V závorce jsou bonusové body za nepovinné úkoly.
+{{< /hint >}}
 
 # Zápočet
 Zápočet získáte, pokud:
