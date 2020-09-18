@@ -9,23 +9,23 @@ weight: 2
 ---
 
 # Podpora více vláken v OS NOVA
-Cílem tohoto cvičení je implementovat do OS NOVA systémové volání
+Cílem tohoto cvičení je implementovat do OS NOVA systémová volání
 `thread_create` a `thread_yield` a dosáhnout tím podpory jednoduchých
 vícevláknových aplikací.
 
 ## Domácí příprava
-Pro toto cvičení budete potřebovat znalosti o:
-- přečíst (ideálně i umět vysvětlit) funkce v OS NOVA:
-  - `bootstrap`, `make_current`, `ret_user_sysexit`, konstruktor k `Ec`
-- fungování plánovačů v operačním systému (schedulers)
-  - [3. přednáška][l3]
-- instrukce [sysenter][]
-- základní syntaxi inline assembleru (tak jako v minulých cvičeních)
+Pro toto cvičení budete potřebovat:
+- přečíst si (ideálně i umět vysvětlit) funkce v OS NOVA:
+  - `bootstrap`, `make_current`, `ret_user_sysexit`, konstruktor `Ec::Ec`
+- mít základní znalosti o fungování plánovačů v operačním systému
+  (schedulers) – viz [3. přednášku][l3]
+- rozumět instrukci instrukce [sysenter][]
+- znát základní syntaxi inline assembleru (tak jako v minulých cvičeních)
   - https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html (pochopit příklad z
     remarks)
-- spojové seznamy
+- umět implementovat spojové seznamy
   - https://en.wikipedia.org/wiki/Linked_list
-- programování v C++
+- programovat v C++.
 
 [l3]: /docs/prednasky/pdf/lekce03.pdf
 [sysenter]: https://c9x.me/x86/html/file_module_x86_id_313.html
@@ -52,7 +52,7 @@ void thread_yield(void);
 - `start_routine` je ukazatel na adresu, od které se zahájí vykonávání nového
   vlákna.
 - `stack_top` je adresa vrcholu zásobníku nového vlákna.
-- `thread_create` vrací 0 pokud proběhl bez chyby. V opačném případě vrací
+- `thread_create` vrací 0 pokud funkce proběhla bez chyby. V opačném případě vrací
   libovolné nenulové číslo chyby.
 - `thread_yield` přepne vykonávání z aktuálního vlákna na následující vlákno ve
   frontě.
