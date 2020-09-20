@@ -10,7 +10,7 @@ weight: 2
 
 # Učebny
 Cvičení probíhají v učebně
-[KN:E-2, nebo T2:H1-131](https://www.fel.cvut.cz/cz/education/rozvrhy-ng.B191/public/html/predmety/46/83/p4683606.html).
+[KN:E-2, nebo T2:H1-131](https://www.fel.cvut.cz/cz/education/rozvrhy-ng.B191/public/html/predmety/46/83/p4683606.html) případně pomocí systému BBB přes stránky odevzdávacího systému [Brute](https://cw.felk.cvut.cz/brute).
 
 # Program cvičení
 | cv.   | body  | náplň
