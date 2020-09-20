@@ -44,7 +44,7 @@ Zápočet získáte, pokud:
 # Pravidla
 - Od studentů se očekává domácí příprava na další cvičení.
 - Body se udělují za domácí úkoly a za aktivitu při cvičení:
-    - Za včas odevzdanou úlohu dostanete 2-12 bodů podle typu úlohy
+    - Za včas odevzdanou úlohu dostanete 2–12 bodů podle typu úlohy
     - Body za úlohy se strhávají za **pozdní odevzdání** a za další
       **nedostatky** odhalené cvičícím.
     - Na začátku každého cvičení bude možnost získat body za odpovědi na otázky
