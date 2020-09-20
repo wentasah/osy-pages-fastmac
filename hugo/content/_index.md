@@ -44,14 +44,39 @@ date: 2020-02-07T10:47:21+01:00
 {{< /columns >}}
 
 # Komunikace
-Se cvičícími a přednášejícími komunikujte osobně na cvičeních a
-přednáškách. Otázky a připomínky, zejména ty, které mohou zajímat i
-ostatní, směřujte na [GitLab Issues][]. Případně můžete použít i
-[diskuzní fórum][], které ale chceme používat primárně pro komunikaci
-od vyučujících směrem ke studentům.
 
-Kde to dává smysl, preferujeme veřejnou komunikaci přes gitlab či
-fórum před privátní komunikací emailem.
+Pro komunikaci mezi
+
+- Přednášky a cvičení budou v době distanční výuky organizovány přes
+  BigBlueButton (BBB), který je součástí systému [BRUTE](https://cw.felk.cvut.cz/brute/student/course/1134).
+
+- MS Teams budeme používat pro:
+  - distribuci důležitých sdělení od učitelů ke studentům (kanál
+    General – doporučujeme nastavit si u tohoto kanálu notifikace na
+    "all activity") a
+  - případné chatování mimo dobu cvičení a přednášek. Každá
+    paralelka bude mít svůj vlastní kanál, záležitosti okolo celého
+    předmětu budeme diskutovat v kanálu "Pokec".
+
+- Připomínky a otázky k webovým stránkám, zadáním úkolů a přednáškám
+  nám posílejte přes [GitLab
+  Issues](https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues).
+  Odkaz "Dejte nám vědět" je na každé webové stránce dole a na každém
+  slidu přednášky (otazník v kroužku).
+
+- Fórum – protože GitLab Issues i Teams používáme letos poprvé,
+  necháváme zapnuté i [CW
+  Fórum](https://cw.felk.cvut.cz/forum/forum-1663.html) jako záložní
+  řešení v případě problémů. Můžete nám psát i tam.
+
+<!-- Se cvičícími a přednášejícími komunikujte osobně na cvičeních a -->
+<!-- přednáškách. Otázky a připomínky, zejména ty, které mohou zajímat i -->
+<!-- ostatní, směřujte na [GitLab Issues][]. Případně můžete použít i -->
+<!-- [diskuzní fórum][], které ale chceme používat primárně pro komunikaci -->
+<!-- od vyučujících směrem ke studentům. -->
+
+Kde to dává smysl, preferujeme veřejnou komunikaci přes Gitlab, Teams
+či fórum před privátní komunikací emailem nebo chatem.
 
 [GitLab Issues]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues?scope=all&utf8=%E2%9C%93&state=all
 [diskuzní fórum]: https://cw.felk.cvut.cz/forum/forum-1663.html
