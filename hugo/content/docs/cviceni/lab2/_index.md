@@ -109,17 +109,17 @@ chybový výstup posláno. Toho se dá využít k ladění skriptu:
     ```bash
     echo "Ctu radku '$line'" >&2
     ```
-3. Specificky k této úloze: při ladění pozor, abyste nevypsali řádky
-    ```bash
+3. Specificky k této úloze: při ladění pozor, abyste nevypsali řádky typu
+    ```
     ERROR 'nejaky-retezec-v-apostrofech'
     ```
-    -- to by se pletlo s očekávaným výstupem skriptu na `stderr`.
+    Ty by se pletly s očekávaným výstupem skriptu na `stderr`.
 
 Při ladění na svém počítači využívejte přesměrování vstupu nebo roury, abyste
 nemuseli opisovat vstup ručně:
 ```bash
 echo PATH soubor.txt | ./script.sh
-/script.sh < vstup.txt
+./script.sh < vstup.txt
 ```
 # Materiály
 - [Základy jazyka BASH](bash)
