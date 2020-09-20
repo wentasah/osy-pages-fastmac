@@ -9,40 +9,22 @@ weight: 1
 ---
 
 # Program přednášek
-1. Úvod do operačních systémů
-    - [Prezentace][l1]
-    - [Příklady][p1]
-2. Systémová volání
-    - [Prezentace][l2]
-    - [Příklady][p2]
-3. Procesy a vlákna
-    - [Prezentace][l3]
-    - [Příklady][p3]
-4. Synchronizace
-    - [Prezentace][l4]
-    - [Příklady][p4]
-5. Meziprocesní komunikace
-    - [Prezentace][l5]
-    - [Příklady][p5]
-6. Virtuální paměť
-    - [Prezentace][l6]
-7. Správa paměti
-    - [Prezentace][l7]
-8. Bezpečnost OS
-    - [Prezentace][l8]
-9. Vstup/výstup, ovladače
-    - [Prezentace][l9]
-10. Souborové systémy
-    - [Prezentace][l10]
-11. Grafický subsystém, HW akcelerace
-    - [Prezentace][l11]
-12. Virtualizace
-    - [Prezentace][l12]
-    - [Příklady][p12]
-13. Mobilní OS (Android)
-    - [Prezentace][l13]
-14. Open source, trendy v OS
-    - [Prezentace][l14]
+|     | Téma                                     | Další materiály |
+|-----|------------------------------------------|-----------------|
+| 1.  | [Úvod do operačních systémů][l1]         | [Příklady][p1]  |
+| 2.  | [Systémová volání][l2]                   | [Příklady][p2]  |
+| 3.  | [Procesy a vlákna][l3]                   | [Příklady][p3]  |
+| 4.  | [Synchronizace][l4]                      | [Příklady][p4]  |
+| 5.  | [Meziprocesní komunikace][l5]            | [Příklady][p5]  |
+| 6.  | [Virtuální paměť][l6]                    |                 |
+| 7.  | [Správa paměti][l7]                      |                 |
+| 8.  | [Bezpečnost OS][l8]                      |                 |
+| 9.  | [Vstup/výstup, ovladače][l9]             |                 |
+| 10. | [Souborové systémy][l10]                 |                 |
+| 11. | [Grafický subsystém, HW akcelerace][l11] |                 |
+| 12. | [Virtualizace][l12]                      | [Příklady][p12] |
+| 13. | [Mobilní OS (Android)][l13]              |                 |
+| 14. | [Open source, trendy v OS][l14]          |                 |
 
 [p1]: pdf/01-priklady.tgz
 [p2]: pdf/02-priklady.tgz
