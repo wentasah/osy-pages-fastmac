@@ -51,7 +51,7 @@ technologie:
 - Přednášky a cvičení budou v době distanční výuky organizovány přes
   BigBlueButton (BBB), který je součástí systému [BRUTE](https://cw.felk.cvut.cz/brute/student/course/1134).
 
-- MS Teams budeme používat pro:
+- [MS Teams][][^1] budeme používat pro:
   - distribuci důležitých sdělení od učitelů ke studentům (kanál
     General – doporučujeme nastavit si u tohoto kanálu notifikace na
     "all activity") a
@@ -81,6 +81,7 @@ Kde to dává smysl, preferujeme veřejnou komunikaci přes Gitlab, Teams
 
 [GitLab Issues]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues?scope=all&utf8=%E2%9C%93&state=all
 [diskuzní fórum]: https://cw.felk.cvut.cz/forum/forum-1663.html
+[MS Teams]: https://teams.microsoft.com/
 
 # Hodnocení předmětu
 - Cvičení: max. 65 bodů (pokud student získá za dobrovolné úkoly více bodů, budou zastropovány na 65)
@@ -99,3 +100,7 @@ Kde to dává smysl, preferujeme veřejnou komunikaci přes Gitlab, Teams
 
 # Příprava na zkoušku
 [Ukázka možné zkouškové písemky](pdf/ukazka-zkousky.pdf)
+
+[^1]: Do aplikace se hlásí pomocí přihlašovacího jména ve tvaru
+    `username@cvut.cz` (Pozor: opravdu `@cvut.cz` a nikoliv
+    `@fel.cvut.cz`!) a vašeho hesla ČVUTid SSO (jako do KOSu).
