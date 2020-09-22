@@ -45,7 +45,8 @@ date: 2020-02-07T10:47:21+01:00
 
 # Komunikace
 
-Pro komunikaci mezi
+Pro komunikaci mezi studenty a vyučujícími budeme používat následující
+technologie:
 
 - Přednášky a cvičení budou v době distanční výuky organizovány přes
   BigBlueButton (BBB), který je součástí systému [BRUTE](https://cw.felk.cvut.cz/brute/student/course/1134).
