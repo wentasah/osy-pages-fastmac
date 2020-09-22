@@ -21,7 +21,7 @@ funkcemi příkazové řádky a dalšími nástroji UNIXového operačního syst
 # Zadání úlohy
 Vytvořte skript v jazyce BASH (s příponou `.sh`), který:
 
-- bude číst řádky ze standardního vstupu
+- bude číst řádky ze standardního vstupu (až do signalizace konce souboru)
 
 - pro každou řádku začínající řetězcem “PATH ” bude postupovat následovně:
 
