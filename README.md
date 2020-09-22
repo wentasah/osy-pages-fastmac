@@ -13,7 +13,8 @@ docker run --rm -e HUGO_WATCH=1 -e HUGO_THEME=book -p 1313:1313 \
 ```
 
 # Contribute
-Use [OneFlow][] branching model. Write [great git commit messages][]:
+Use [Merge Requests][] to propose changes. Don't forget to write [great git
+commit messages][]:
 
 1. Separate subject from body with a blank line.
 2. Limit the subject line to 50 characters.
@@ -23,6 +24,5 @@ Use [OneFlow][] branching model. Write [great git commit messages][]:
 6. Wrap the body at 72 characters.
 7. Use the body to explain what and why vs. how.
 
-[OneFlow]: https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow
-[changelog]: ./CHANGELOG.md
+[Merge Requests]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/merge_requests
 [great git commit messages]: https://chris.beams.io/posts/git-commit/
