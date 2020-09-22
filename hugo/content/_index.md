@@ -8,7 +8,7 @@ date: 2020-02-07T10:47:21+01:00
 
 # Výuka
 {{< columns >}}
-- [Rozvrh B4B35OSY](https://www.fel.cvut.cz/cz/education/rozvrhy-ng.B191/public/html/predmety/46/83/p4683606.html)
+- [Rozvrh B4B35OSY](https://www.fel.cvut.cz/cz/education/rozvrhy-ng.B201/public/html/predmety/46/83/p4683606.html)
 - [Upload systém Brute](https://cw.felk.cvut.cz/brute/)
 - [Anketa hodnocení výuky](https://www.fel.cvut.cz/cz/anketa/)
 
