@@ -113,4 +113,4 @@ stiskem kombinace “`20a*<ESC>`” se za pozici kurzoru vloží 20 znaků “`*
 - http://www.viemu.com/vi-vim-cheat-sheet.gif
 - http://www.abclinuxu.cz/clanky/navody/editor-vim-prakticky-i
 - http://fotomobilpc.i-prehled.cz/vim/
-- http://www.it.cas.cz/manual/vim/
+- https://www.fprintf.net/vimCheatSheet.html
