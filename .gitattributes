@@ -1,0 +1,8 @@
+# Teach git how to diff LibreOffice documents (see https://git.wiki.kernel.org/index.php/GitTips#Getting_a_plain-text_diff)
+*.ods diff=odf
+*.odt diff=odf
+*.odp diff=odf
+
+*.pdf diff=pdf
+
+.gitignore export-ignore
