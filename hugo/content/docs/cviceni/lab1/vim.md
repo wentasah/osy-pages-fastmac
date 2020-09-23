@@ -58,8 +58,10 @@ Editor vim se ukončuje příkazem `quit` (zkratka `q`) v režimu příkazové �
     gg — navigace na začátek souboru
     G — navigace na konec souboru
     % — navigace kurzoru na odpovídající párovou závorku
-    / — hledání textu (po stisku / je nutné zadat hledaný text)
-    n — opakování posledního hledání
+    / — hledání textu (směrem dopředu)
+    ? — hledání textu (směrem dozadu)
+    n — nalezení dalšího výskytu hledaného slova (směrem dopředu)
+    N — nalezení dalšího výskytu hledaného slova (směrem dozadu)
     u — undo — vrácení poslední změny (zrušení posledního příkazu)
     <CTRL>+r — redo
     . — zopakování posledního provedeného příkazu
