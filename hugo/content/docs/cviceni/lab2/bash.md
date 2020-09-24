@@ -149,7 +149,7 @@ A="text s mezerami"
 program $A
 program "$A"
 ```
-okud bychom vynechali uvozovky u přiřazení do proměnné `A`, obdržíme zřejmě
+Pokud bychom vynechali uvozovky u přiřazení do proměnné `A`, obdržíme zřejmě
 chybové hlášení o neznámém příkazu “`s`” -- interpret nemá jak odlišit zda se
 jedná o pokračování řetězce, nebo příkaz který chcete spustit s přednastavenou
 proměnnou `A` na hodnotu “text”. Druhá řádka se interpretuje jako program text
@@ -306,7 +306,7 @@ vrací příkaz `read` nenulovou návratovou hodnotu. Pro zpracování víceřá
 vstupu je tedy nutné volat příkaz `read` opakovaně.
 
 # Řízení běhu programu, podmínky a cykly
-Bezpodmínečné ukončení běhu skriptu je možné příkazem exit. Nepovinným
+Bezpodmínečné ukončení běhu skriptu je možné příkazem `exit`. Nepovinným
 parametrem je návratová hodnota, která je vrácena rodičovskému procesu, výchozí
 návratová hodnota je `0`.
 
