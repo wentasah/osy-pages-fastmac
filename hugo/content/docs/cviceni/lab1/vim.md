@@ -52,7 +52,7 @@ Editor vim se ukončuje příkazem `quit` (zkratka `q`) v režimu příkazové �
     r — nahraď znak pod kurzorem (následuje nový znak); nepřepíná režim
     D — smazat vše od kurzoru do konce řádku
     w — posun kurzoru na začátek dalšího slova
-    b — posun kurzoru na konec předchozího slova
+    b — posun kurzoru na začátek předchozího slova
     { — posun kurzoru na předchozí prázdnou řádku (začátek odstavce)
     } — posun kurzoru na následující prázdnou řádku
     gg — navigace na začátek souboru
