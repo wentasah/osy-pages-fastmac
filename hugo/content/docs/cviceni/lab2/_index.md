@@ -126,7 +126,7 @@ chybový výstup posláno. Toho se dá využít k ladění skriptu:
 -  Zkuste používat nástroj [ShellCheck][], který vám pomůže vyvarovat
    se typických chyb. Můžete používat buď [online verzi][ShellCheck],
    nebo si ho nainstalovat lokálně a případně si ho [integrovat do
-   vašeho editoru](https://github.com/koalaman/shellcheck#in-your-editor).
+   svého editoru](https://github.com/koalaman/shellcheck#in-your-editor).
 
 [ShellCheck]: https://www.shellcheck.net/
 
