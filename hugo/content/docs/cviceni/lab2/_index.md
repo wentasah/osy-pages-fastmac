@@ -98,29 +98,31 @@ vy v BRUTE stále vidíte u úlohy 0 bodů!)
 Automatický vyhodnocovací skript v odevzdávacím systému nekontroluje striktně
 standardní chybový výstup, ale při detekci problému vám zobrazí vše, co bylo na
 chybový výstup posláno. Toho se dá využít k ladění skriptu:
-1. Příkaz
+-  Příkaz
     ```bash
     set -x
     ```
     způsobí, že se na chybový výstup vypíše každý následující
     příkaz, který bash vykoná.
 
-2. Můžete si tam vypisovat i vaše poznámky. Např:
+-  Můžete si tam vypisovat i vaše poznámky. Např:
     ```bash
     echo "Ctu radku '$line'" >&2
     ```
-3. Specificky k této úloze: při ladění pozor, abyste nevypsali řádky typu
+-  Specificky k této úloze: při ladění pozor, abyste nevypsali řádky typu
     ```
     ERROR 'nejaky-retezec-v-apostrofech'
     ```
     Ty by se pletly s očekávaným výstupem skriptu na `stderr`.
 
-Při ladění na svém počítači využívejte přesměrování vstupu nebo roury, abyste
-nemuseli opisovat vstup ručně:
-```bash
-echo PATH soubor.txt | ./script.sh
-./script.sh < vstup.txt
-```
+-  Při ladění na svém počítači využívejte přesměrování vstupu nebo
+   roury, abyste nemuseli opisovat vstup ručně:
+
+   ```bash
+   echo PATH soubor.txt | ./script.sh
+   ./script.sh < vstup.txt
+   ```
+
 # Materiály
 - [Základy jazyka BASH](bash)
 
