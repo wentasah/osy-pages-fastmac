@@ -35,7 +35,8 @@ Vytvořte skript v jazyce BASH (s příponou `.sh`), který:
     hlášek:
 
     - `FILE 'cesta/k/souboru' pocet_řádků_souboru '1._řádek_souboru'` pro
-      existující běžný soubor
+      existující běžný soubor (pokud je počet řádků 0,
+      `1._řádek_souboru` bude prázdný řetězec)
 
     - `DIR 'cesta/k/adresari'` pokud se jedná o adresář
 
