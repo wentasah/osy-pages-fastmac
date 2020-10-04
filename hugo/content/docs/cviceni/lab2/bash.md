@@ -157,7 +157,7 @@ s mezerami což znamená, že spuštěný program obdrží tři samostatné argu
 “text”, “s” a “mezerami”, což zřejmě není náš záměr. Třetí řádek pracuje tak,
 jak požadujeme, tj. předá programu jediný argument bez ohledu na jeho obsah.
 
-okud budu chtít předat celé pole jako parametry spuštěného programu (každý
+Pokud budu chtít předat celé pole jako parametry spuštěného programu (každý
 prvek jako samostatný argument), musím výraz uzavřít do uvozovek:
 ```bash
 program "${POLE[@]}"
