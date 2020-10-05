@@ -230,7 +230,7 @@ Vzory mohou mít podobu regulárního výrazu:
 ```
 podmínky:
 ```awk
-NR=10 { action }    # akce se vykoná pro 10. řádku
+NR==10 { action }    # akce se vykoná pro 10. řádku
 ```
 složené výrazy:
 ```awk
