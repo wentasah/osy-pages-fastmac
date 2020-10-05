@@ -21,15 +21,15 @@ Vytvořte skript v jazyce Bash podle následujících požadavků:
 
 - jeho funkce bude určena následujícími přepínači:
 
-- `-h` vypíše stručnou nápovědu a ukončí skript. Nápovědu můžete vypsat na
-    standardní nebo chybový výstup.
+  - `-h` vypíše stručnou nápovědu a ukončí skript. Nápovědu můžete
+    vypsat na standardní nebo chybový výstup.
 
-- `-a ` vypíše na standardní výstup všechny soubory PDF z aktuálního
+  - `-a` vypíše na standardní výstup všechny soubory PDF z aktuálního
     adresáře. Poznáte je podle přípony .pdf; na velikosti písmen
     nezáleží. Každý soubor bude na samostatném řádku, řazení podle
     abecedy.
 
-- `-b ` přečte text ze standardního vstupu a vypíše na standardní
+  - `-b` přečte text ze standardního vstupu a vypíše na standardní
     výstup všechny řádky začínající číslem, bez tohoto čísla. Uvažujte
     pouze celá čísla v dekadickém zápisu, která můžou obsahovat
     znaménko `+` či `-`. Případné desetinné tečky/čárky už jsou
@@ -37,31 +37,31 @@ Vytvořte skript v jazyce Bash podle následujících požadavků:
 
 	Nápověda: Použijte nástroj `sed`.
 
-- `-c ` přečte text ze standardního vstupu a najde v něm všechny
+  - `-c` přečte text ze standardního vstupu a najde v něm všechny
     věty. Ty pak vypíše na standardní výstup každou na nový řádek. Za
     větu považujte nejdelší textový řetězec mezi velkým písmenem a
     znakem ukončujícím větu (.!?), který neobsahuje další znak
     ukončující větu. Věty typu "Král Karel I. Veliký se narodil 2.
-    dubna." nebudou součástí testovacích skriptů. Bude-li věta rozdělena
-    na více řádků, skript nahradí znak konce řádku mezerou.
+    dubna." nebudou součástí testovacích skriptů. Bude-li věta
+    rozdělena na více řádků, skript nahradí znak konce řádku mezerou
+    (nápověda: použijte nástroj `tr`).
 
-	Nápověda: použijte nástroj `tr` na vymazání odřádkování.
-
-- `-d <prefix> ` (2b, nepovinné) přečte zdrojový kód jazyka C ze
-	standardního vstupu a provede změnu názvů souborů v direktivě
-	`#include` ve všech souborech tak, že `<prefix>` přidá na začátek
-	názvu souboru. Uvažujte obě varianty direktivy `#include` – jak
-	pro soubory z aktuálního adresáře (`"foo.h"`) tak pro systémové
-	knihovny (`<foo.h>`). Například pro `-d lib/`, bude `#include
-	"foo.h"` změněno na `#include "lib/foo.h"`. Změny se provedou i
-	uvnitř komentářů a řetězců.
-
-- V případě zadání více platných přepínačů, skript vykoná funkci podle prvního z nich.
+  - `-d <prefix>` (2b, nepovinné) přečte zdrojový kód jazyka C ze
+    standardního vstupu a provede změnu názvů souborů v direktivě
+    `#include` ve všech souborech tak, že `<prefix>` přidá na začátek
+    názvu souboru. Uvažujte obě varianty direktivy `#include` – jak
+    pro soubory z aktuálního adresáře (`"foo.h"`) tak pro systémové
+    knihovny (`<foo.h>`). Například pro `-d lib/`, bude `#include
+    "foo.h"` změněno na `#include "lib/foo.h"`. Změny se provedou i
+    uvnitř komentářů a řetězců.
 
 - Pokud není zadaný platný přepínač, skript vypíše nápovědu a skončí s
   návratovým kódem 1, v ostatních případech skončí s návratovým kódem
   0.
-  
+
+- V případě zadání více platných přepínačů, skript vykoná funkci podle
+  prvního z nich.
+
 # Materiály
 - [Základy regulárních výrazů](regex)
 
