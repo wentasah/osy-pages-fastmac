@@ -90,7 +90,7 @@ Dále vytvořte `Makefile`, který:
 - Uzavírejte důsledně všechny file descriptory, které již nebudete potřebovat.
   Předejdete tím záludným chybám.
 - Z funkce obsluhující signál (tzv. *signal handler*) není možné volat
-  libovolnou funkci. Viz `man signal-safety`. Zejména by se nemělo používat
+  libovolnou funkci. Viz [man signal-safety][]. Zejména by se nemělo používat
   “buffered I/O”, tedy např. funkce `printf`. Pokud nepodporovanou funkci
   zavoláte, program může (ale nemusí) zhavarovat (jedná se o tzv. chybu souběhu
   neboli “*race condition*”).
@@ -100,6 +100,8 @@ Dále vytvořte `Makefile`, který:
   ```bash
   tar czf osy04.tgz Makefile *.[ch]
   ```
+
+[man signal-safety]: https://man7.org/linux/man-pages/man7/signal-safety.7.html
 
 ## Aplikace nsd
 Zdrojové kódy aplikace `nsd` se skládají ze souborů `nsd_main.c`, `nsd.c` a
