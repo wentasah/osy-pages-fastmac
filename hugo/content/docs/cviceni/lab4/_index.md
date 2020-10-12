@@ -79,8 +79,9 @@ Dále vytvořte `Makefile`, který:
 - Při změně libovolného zdrojového souboru `make` překompiluje pouze soubory,
   které jsou z daného souboru generovány (ať přímo či nepřímo). Ostatní
   generované soubory měněny nebudou.
-- Překladači jazyka C vždy předá volbu `-Wall`, která způsobí výpis užitečných
-  varování.
+- Překladači jazyka C/C++ vždy předá volbu `-Wall`, která způsobí
+  výpis užitečných varování, a dále volby v proměnné `EXTRA_CFLAGS`,
+  která je ve výchozím stavu prázdná.
 
 ## Poznámky k implementaci
 - Rouru musíte vytvořit dříve než potomky, abyste je s ní mohli propojit.
