@@ -125,6 +125,18 @@ Pokud provádíte překlad a linkování odděleně, používejte příznaky v
 
 Překladač nesmí generovat žádná varování.
 
+## Testovací vstup
+
+Testovat váš program můžete např. následovně:
+
+    $ (echo 20foo 3 bar; echo 5baz) | ./prod-cons 4
+
+Program by měl vypsat (čísla threadů a pořadí řádků může být jiné):
+
+	Thread 1: foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo
+	Thread 2: bar bar bar
+	Thread 1: baz baz baz baz baz
+
 # Domácí příprava na další cvičení
 Nastudujte si použití podmínkový proměnných a k tomu příslušné funkce v
 knihovně `pthread`:
