@@ -129,9 +129,11 @@ Překladač nesmí generovat žádná varování.
 
 Testovat váš program můžete např. následovně:
 
-    $ (echo 20foo 3 bar; echo 5baz) | ./prod-cons 4
+```sh
+(echo "20foo  3 bar"; echo 5baz) | ./prod-cons 4
+```
 
-Program by měl vypsat (čísla threadů a pořadí řádků může být jiné):
+Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může být jiné):
 
 	Thread 1: foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo
 	Thread 2: bar bar bar
