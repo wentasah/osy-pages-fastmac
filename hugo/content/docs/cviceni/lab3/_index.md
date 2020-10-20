@@ -31,8 +31,8 @@ Vytvořte skript v jazyce Bash podle následujících požadavků:
 
   - `-b` přečte text ze standardního vstupu a vypíše na standardní
     výstup všechny řádky začínající číslem, bez tohoto čísla. Uvažujte
-    pouze celá čísla v dekadickém zápisu, která můžou obsahovat
-    znaménko `+` či `-`. Případné desetinné tečky/čárky už jsou
+    pouze celá čísla v dekadickém zápisu, která můžou začínat
+    znaménkem `+` či `-`. Případné desetinné tečky/čárky už jsou
     součástí dalšího textu a budou vypsány.
 
 	Nápověda: Použijte nástroj `sed`.
