@@ -9,9 +9,9 @@ weight: 1
 ---
 
 # Vlákna a synchronizace
-Na tomto cvičení byste si měli vyzkoušet jak vytvořit vlákno v jazyce C s
+Na tomto cvičení byste si měli vyzkoušet, jak vytvořit vlákno v jazyce C s
 využitím knihovny `pthread` a jak vlákna synchronizovat tak, aby nedošlo k
-poškození dat se kterými se pracuje z více vláken.
+poškození dat, se kterými se pracuje z více vláken.
 
 ## Domácí příprava
 Pro toto cvičení budete potřebovat znalosti o tom
@@ -78,7 +78,7 @@ Implementujte vícevláknový program `prod-cons` splňující následující po
       program skončí s návratovým kódem `1`.
 
     - Pro každý přečtený příkaz dynamicky alokuje (`malloc()`, `new`, …)
-      datovou strukturu, uloží do ní `X` a `slovo` a zařadí jí na konec
+      datovou strukturu, uloží do ní `X` a `slovo` a zařadí ji na konec
       spojového seznamu.
 
 - Každý konzument bude splňovat následující:
@@ -101,7 +101,7 @@ Implementujte vícevláknový program `prod-cons` splňující následující po
 
 - Pouze konzumenti budou zapisovat na standardní výstup.
 
-- Standardní chybový výstup můžete použít k ladícím výpisům.
+- Standardní chybový výstup můžete použít k ladicím výpisům.
 
 - Uzavření standardního vstupu je požadavkem na ukončení programu. Pokud není
   řečeno jinak, návratový kód bude `0`.
@@ -130,7 +130,7 @@ Překladač nesmí generovat žádná varování.
 Testovat váš program můžete např. následovně:
 
 ```sh
-(echo "20foo  3 bar"; echo 5baz) | ./prod-cons 4
+(echo "20foo  3 bar"; echo "5baz") | ./prod-cons 4
 ```
 
 Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může být jiné):
@@ -140,7 +140,7 @@ Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může 
 	Thread 1: baz baz baz baz baz
 
 # Domácí příprava na další cvičení
-Nastudujte si použití podmínkový proměnných a k tomu příslušné funkce v
+Nastudujte si použití podmínkových proměnných a k tomu příslušné funkce v
 knihovně `pthread`:
 - `pthread_cond_init`
 - [`pthread_cond_destroy`][10]
