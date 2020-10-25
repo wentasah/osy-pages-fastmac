@@ -139,6 +139,16 @@ Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může 
 	Thread 2: bar bar bar
 	Thread 1: baz baz baz baz baz
 
+Zkuste i chování při neplatném vstupu:
+
+```sh
+echo "invalid" | ./prod-cons 4
+echo "Exit code: $?"
+```
+Výsledkem by mělo být:
+
+    Exit code: 1
+
 # Domácí příprava na další cvičení
 Nastudujte si použití podmínkových proměnných a k tomu příslušné funkce v
 knihovně `pthread`:
