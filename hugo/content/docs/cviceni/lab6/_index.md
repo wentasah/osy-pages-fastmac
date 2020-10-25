@@ -13,7 +13,7 @@ Na tomto cvičení byste si měli vyzkoušet další metody synchronizace vláke
 podmínkové proměnné (*condition variables*).
 
 ## Domácí příprava
-Nastudujte si použití podmínkový proměnných a k tomu příslušné funkce v
+Nastudujte si použití podmínkových proměnných a k tomu příslušné funkce v
 knihovně `pthread`:
 - `pthread_cond_init`
 - [`pthread_cond_destroy`][10]
