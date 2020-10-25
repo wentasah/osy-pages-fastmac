@@ -140,7 +140,7 @@ Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může 
 	Thread 1: baz baz baz baz baz
 
 # Domácí příprava na další cvičení
-Nastudujte si použití podmínkový proměnných a k tomu příslušné funkce v
+Nastudujte si použití podmínkových proměnných a k tomu příslušné funkce v
 knihovně `pthread`:
 - `pthread_cond_init`
 - [`pthread_cond_destroy`][10]
