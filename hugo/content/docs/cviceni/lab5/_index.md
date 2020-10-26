@@ -130,7 +130,7 @@ Překladač nesmí generovat žádná varování.
 Testovat váš program můžete např. následovně:
 
 ```sh
-(echo "20foo  3 bar"; echo "5baz") | ./prod-cons 4
+(echo "20foo  3 bar"; echo 5baz) | ./prod-cons 4
 ```
 
 Program by měl vypsat zhruba toto (čísla threadů a pořadí řádků může být jiné):
