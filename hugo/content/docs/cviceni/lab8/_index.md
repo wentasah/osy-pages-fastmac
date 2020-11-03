@@ -16,7 +16,7 @@ jako `libc`. Tato znalost se vám bude hodit v dalších cvičeních.
 ## Domácí příprava
 Seznamte se se základními instrukcemi architektury `x86` a způsobem, jakým
 vkládat instrukce assembleru přímo do zdrojového kódu v jazyce C/C+ +. Projděte
-si [prezentaci o inline assembler][ia] a připomeňte si [první][l1] a [druhou
+si [prezentaci o inline assembleru][ia] a připomeňte si [první][l1] a [druhou
 přednášku][l2].
 
 Dále se seznamte s nástroji [strace][] a [ltrace][]. Doporučujeme si oba
