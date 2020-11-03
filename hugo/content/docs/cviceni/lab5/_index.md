@@ -59,8 +59,12 @@ Implementujte vícevláknový program `prod-cons` splňující následující po
       <slovo>`”, kde `<X>` je celé nezáporné číslo a `<slovo>` je libovolná
       neprázdná sekvence znaků (kromě whitespace). `X` od slova může, ale
       nemusí, být odděleno bílými znaky (whitespace), jednotlivé příkazy jsou
-      od sebe vždy odděleny jedním či více bílými znaky (mezera, konec řádku).
-      Délka slova je omezená pouze velikostí dostupné paměti.
+      od sebe vždy odděleny jedním či více bílými znaky (mezera, konec
+      řádku).
+
+      Délka slova je omezená pouze velikostí dostupné paměti. To
+      znamená, že slovo musíte mít v paměti uloženo jen jednou. Na víc
+      kopií nemusíte mít dost paměti.
 
       K načítání příkazů doporučujeme použít následující kód:
       ```C
