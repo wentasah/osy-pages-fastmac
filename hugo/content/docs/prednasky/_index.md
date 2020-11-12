@@ -40,7 +40,7 @@ weight: 1
 [l5]: pdf/lekce05.pdf
 [l6]: pdf/lekce06.pdf
 [l7]: pdf/lekce07.pdf
-[l8]: pdf/osy8.pdf
+[l8]: pdf/lekce08_security.pdf
 [l9]: pdf/osy9.pdf
 [l10]: pdf/osy10.pdf
 [l11]: pdf/osy11.pdf
