@@ -85,4 +85,4 @@ vlastní útok.
 [radare]: http://www.radare.org/r/
 [6]: https://github.com/radare/radare2/blob/master/doc/intro.md#debugger
 [7]: https://radare.gitbooks.io/radare2book/first_steps/basic_debugger_session.html
-[gitlab]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues
+[gitlab]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues/new?issue[title]=09exploit&issue[description]=What%27s%20your%20question
