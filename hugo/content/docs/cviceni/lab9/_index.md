@@ -79,10 +79,10 @@ vlastní útok.
 - Může se vám hodit nástroj [radare][], který používá mnoho profesionálů.
   Základní informace o použití radare jako debuggeru najdete [zde][6] či
   [zde][7].
-- Další nápovědu můžete získat na [fóru][forum].
+- Další nápovědu můžete získat na [gitlabu][gitlab].
 
 [5]: https://cs.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 [radare]: http://www.radare.org/r/
 [6]: https://github.com/radare/radare2/blob/master/doc/intro.md#debugger
 [7]: https://radare.gitbooks.io/radare2book/first_steps/basic_debugger_session.html
-[forum]: https://cw.felk.cvut.cz/forum/thread-4120.html
+[gitlab]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/issues
