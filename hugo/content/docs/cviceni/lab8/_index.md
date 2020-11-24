@@ -145,8 +145,8 @@ int main()
             return 0; // TODO: replace by exit
 
         if (isnum(buf[i])) {
-        num = num * 10 + buf[i] - '0';
-        num_digits++;
+            num = num * 10 + buf[i] - '0';
+            num_digits++;
         }
     }
 }
