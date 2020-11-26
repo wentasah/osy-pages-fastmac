@@ -42,7 +42,7 @@ weight: 1
 [l7]: pdf/lekce07.pdf
 [l8]: pdf/lekce08_security.pdf
 [l9]: pdf/osy9.pdf
-[l10]: pdf/osy10.pdf
+[l10]: pdf/lekce10_fs.pdf
 [l11]: pdf/osy11.pdf
 [l12]: pdf/lekce12_virt.pdf
 [l13]: pdf/osy13.pdf
