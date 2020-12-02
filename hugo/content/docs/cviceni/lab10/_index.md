@@ -219,6 +219,7 @@ stav emulovaného CPU.
 # Materiály
 - [NOVA Introduction][11]
 - [Testovací programy][12]
+- [Zdrojové kódy OS NOVA][NOVA]
 
 [11]: pdf/osy-nova-intro.pdf
 [12]: misc/brktest.tgz
