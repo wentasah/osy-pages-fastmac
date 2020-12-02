@@ -28,7 +28,7 @@ hw10 :
 	zip hw10.zip kern/src/ec_syscall.cc
 
 hw11 :
-	zip hw11.zip kern/src/ec_syscall.cc user/mem_alloc.cc
+	zip hw11.zip kern/src/ec_syscall.cc $(or $(wildcard user/mem_alloc.cc),user/mem_alloc.c)
 
 hw12 :
 	zip hw12.zip kern/scr/ec_syscall.cc kern/scr/context_construct.cc kern/include/ec.h
