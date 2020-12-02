@@ -39,9 +39,9 @@ Pro toto cvičení budete potřebovat následující:
   https://www.youtube.com/watch?v=KNUJhZCQZ9c, případně další
 - stáhnout, rozbalit a ideálně i vyzkoušet (`make run`) [operační systém
   NOVA][NOVA]
-  - na vlastním PC budete potřeboval balíčky:
+  - na vlastním PC (Debian/Ubuntu) budete potřeboval balíčky:
     - `libc6-dev-i386`
-    - `qemu-system-i386`
+    - `qemu-system-i386` nebo `qemu-system-x86`
   - přečíst hlavní `Makefile`
   - přečíst funkci `Ec::syscall_handler`
   - přečíst funkci `Ptab::insert_mapping` (byla na přednáškách)
