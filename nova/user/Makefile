@@ -18,7 +18,7 @@ libc.a: $(LIB_OBJ:%=lib/%)
 	ar rcs $@ $^
 
 # Add mem_alloc to libc, if it exists
-ifneq ($(wildcard mem_alloc.cc),)
+ifneq ($(wildcard mem_alloc.cc mem_alloc.c),)
 libc.a: mem_alloc.o
 endif
 
