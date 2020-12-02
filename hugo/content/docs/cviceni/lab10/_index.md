@@ -38,7 +38,7 @@ Pro toto cvičení budete potřebovat následující:
   dvoustupňové mapování 10-10-12), viz přednášky, APO,
   https://www.youtube.com/watch?v=KNUJhZCQZ9c, případně další
 - stáhnout, rozbalit a ideálně i vyzkoušet (`make run`) [operační systém
-  NOVA][NOVA]
+  NOVA][nova_src]
   - na vlastním PC (Debian/Ubuntu) budete potřeboval balíčky:
     - `libc6-dev-i386`
     - `qemu-system-i386` nebo `qemu-system-x86`
@@ -62,7 +62,7 @@ Pro toto cvičení budete potřebovat následující:
 [sysexit]: https://c9x.me/x86/html/file_module_x86_id_314.html
 [brk]: http://man7.org/linux/man-pages/man2/brk.2.html
 [7]: https://blog.codinghorror.com/understanding-user-and-kernel-mode/
-[NOVA]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/archive/master/nova.zip?path=nova
+[nova_src]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/archive/master/nova.zip?path=nova
 
 # Zadání úlohy
 Implementujte systémové volání `brk` s prototypem:
@@ -219,7 +219,7 @@ stav emulovaného CPU.
 # Materiály
 - [NOVA Introduction][11]
 - [Testovací programy][12]
-- [Zdrojové kódy OS NOVA][NOVA]
+- [Zdrojové kódy OS NOVA][nova_src]
 
 [11]: pdf/osy-nova-intro.pdf
 [12]: misc/brktest.tgz
