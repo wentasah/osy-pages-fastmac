@@ -37,8 +37,8 @@ Pro toto cvičení budete potřebovat následující:
 - vědět, jak CPU překládá virtuální adresy na fyzické (i386 používá
   dvoustupňové mapování 10-10-12), viz přednášky, APO,
   https://www.youtube.com/watch?v=KNUJhZCQZ9c, případně další
-- [stáhnout][8], rozbalit a ideálně i vyzkoušet (`make run`) operační systém
-  NOVA
+- stáhnout, rozbalit a ideálně i vyzkoušet (`make run`) [operační systém
+  NOVA][NOVA]
   - na vlastním PC budete potřeboval balíčky:
     - `libc6-dev-i386`
     - `qemu-system-i386`
@@ -62,7 +62,7 @@ Pro toto cvičení budete potřebovat následující:
 [sysexit]: https://c9x.me/x86/html/file_module_x86_id_314.html
 [brk]: http://man7.org/linux/man-pages/man2/brk.2.html
 [7]: https://blog.codinghorror.com/understanding-user-and-kernel-mode/
-[8]: misc/nova.zip
+[NOVA]: https://gitlab.fel.cvut.cz/osy/osy.pages.fel.cvut.cz/-/archive/master/nova.zip?path=nova
 
 # Zadání úlohy
 Implementujte systémové volání `brk` s prototypem:
