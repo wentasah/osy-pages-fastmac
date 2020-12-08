@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "mem_alloc.h"
+#include "string.h"
 
 unsigned syscall2(unsigned w0, unsigned w1)
 {

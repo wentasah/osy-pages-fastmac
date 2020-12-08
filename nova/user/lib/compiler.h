@@ -50,7 +50,11 @@
         #define NONNULL             __attribute__((nonnull))
         #define NORETURN            __attribute__((noreturn))
         #define REGPARM(X)          __attribute__((regparm(X)))
+    #ifdef __cplusplus
         #define EXTERN_C            extern "C"
+    #else
+        #define EXTERN_C
+    #endif
         #define WARN_UNUSED_RESULT  __attribute__((warn_unused_result))
 
         #define EXPECT_FALSE(X)     __builtin_expect(!!(X), 0)
