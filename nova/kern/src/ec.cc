@@ -197,7 +197,7 @@ static const char *vec_desc[] = {
 
 void Ec::handle_exc (Exc_regs *r)
 {
-    printf ("Ec::handle_exc %s (eip=%#lx cr2=%#lx)\n", vec_desc[r->vec], r->eip, r->cr2);
+    printf ("\nEc::handle_exc %s (eip=%#lx cr2=%#lx)\n", vec_desc[r->vec], r->eip, r->cr2);
     printf ("eax=%#lx ebx=%#lx ecx=%#lx edx=%#lx\n", r->eax, r->ebx, r->ecx, r->edx);
     printf ("esi=%#lx edi=%#lx ebp=%#lx esp=%#lx\n", r->esi, r->edi, r->ebp, r->esp);
 
