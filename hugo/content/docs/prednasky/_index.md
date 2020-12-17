@@ -43,7 +43,7 @@ weight: 1
 [l8]: pdf/lekce08_security.pdf
 [l9]: pdf/lekce09_io.pdf
 [l10]: pdf/lekce10_fs.pdf
-[l11]: pdf/osy11.pdf
+[l11]: pdf/lekce11_gfx.pdf
 [l12]: pdf/lekce12_virt.pdf
 [l13]: pdf/lekce13_android.pdf
 [l14]: pdf/osy14.pdf
