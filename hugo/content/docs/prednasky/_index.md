@@ -24,7 +24,7 @@ weight: 1
 | 11. | 3. 12. 2020  | [Grafický subsystém, HW akcelerace][l11] |                 |
 | 12. | 10. 12. 2020 | [Virtualizace][l12]                      | [Příklady][p12] |
 | 13. | 17. 12. 2020 | [Mobilní OS (Android)][l13]              |                 |
-| 14. | 7. 1. 2021   | [Open source, trendy v OS][l14]          |                 |
+| 14. | 7. 1. 2021   | [Svobodný/otevřený software][l14]        |                 |
 
 [p1]: pdf/01-priklady.tgz
 [p2]: pdf/02-priklady.tgz
@@ -46,4 +46,4 @@ weight: 1
 [l11]: pdf/lekce11_gfx.pdf
 [l12]: pdf/lekce12_virt.pdf
 [l13]: pdf/lekce13_android.pdf
-[l14]: pdf/osy14.pdf
+[l14]: pdf/lekce14_foss.pdf
