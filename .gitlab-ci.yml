@@ -1,0 +1,12 @@
+image: jojomi/hugo
+pages:
+        stage: deploy
+        script:
+                - cd /builds/osy/osy.pages.fel.cvut.cz
+                - hugo -s hugo -d public
+                - mv hugo/public public
+        artifacts:
+                paths:
+                        - public
+        only:
+                - master@osy/osy.pages.fel.cvut.cz
